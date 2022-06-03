@@ -80,7 +80,7 @@
 // @ is an alias to /src
 // import HelloWorld from '@/components/HelloWorld.vue';
 import Currency from '@/components/CompCurrency.vue';
-import CustomAlert from '@/components/CustomeAlert.vue';
+import CustomAlert from '@/components/CustomAlert.vue';
 import Product from '@/components/CompProduct.vue';
 
 export default {

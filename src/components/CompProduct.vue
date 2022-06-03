@@ -9,14 +9,16 @@
     <h3 class="text-primary">{{ item.name }}</h3>
     <p class="mb-0">{{ item.description }}</p>
     <div class="h5 float-right">
-      <span class="label"></span><curr :amt="item.price"></curr>
+      <span class="label"></span><CompCurrency :amt="item.price"></CompCurrency>
     </div>
   </div>
 </template>
 
 <script>
+import CompCurrency from './CompCurrency.vue';
 export default {
   props: ['item'],
-  emits: ['addToCart']
+  emits: ['addToCart'],
+  components: { CompCurrency }
 };
 </script>
